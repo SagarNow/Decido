@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimize imports: tree-shake lucide-react and framer-motion icons
+  output: 'export',
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
-  // Compress responses
   compress: true,
-  // Power through all images faster
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
 };
