@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#070913] text-slate-100 min-h-screen flex flex-col select-none`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#070913] text-slate-100 min-h-screen flex flex-col`}
       >
         <Navbar />
         <div className="flex-1">
